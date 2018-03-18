@@ -19,7 +19,7 @@ module.exports = function createMiddlewareWatcher(rootPath, opts = {}) {
   const watcher = chokidar.watch(normalize(rootPath), opts.chokidar);
 
   watcher.on('ready', () => {
-    watcher.on('all', (event, changedFilePath) => {
+    watcher.on('change', changedFilePath => {
       log('changed: %s', changedFilePath);
 
       Object.keys(require.cache).forEach(key => {

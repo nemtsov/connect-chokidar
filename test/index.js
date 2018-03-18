@@ -47,7 +47,7 @@ describe('connect-chokidar', () => {
         require.cache[altKey] = 34;
 
         watchOnCbs.ready();
-        watchOnCbs.all();
+        watchOnCbs.change();
 
         expect(require.cache[key]).not.toBeDefined();
         expect(require.cache[altKey]).toBeDefined();
