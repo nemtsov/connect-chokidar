@@ -4,7 +4,7 @@ Middleware to watch files and remove `require.cache` on change, making nodemon u
 
 ## Motivation
 
-Sometimes restaring the entire process when a file changes (as with nodemon) takes
+Sometimes restarting the entire process when a file changes (as with nodemon) takes
 too long or is undesirable. This is often the case with "universal" web applications,
 where the code which runs both on the client and server is already hot-reloaded with webpack.
 In such apps we sometimes have server-only code (such as a GraphQL server or a RESTful API). Restarting the entire server with nodemon would mean forcing webpack to have to take time
