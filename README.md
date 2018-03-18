@@ -1,6 +1,6 @@
 # connect-chokidar [![Build Status](https://img.shields.io/travis/nemtsov/connect-chokidar.svg)](http://travis-ci.org/nemtsov/connect-chokidar) [![NPM version](https://img.shields.io/npm/v/connect-chokidar.svg)](https://www.npmjs.com/package/connect-chokidar)
 
-Middleware to watch files and remove `require.cache` on change that makes nodemon unnecessary.
+Middleware to watch files and remove `require.cache` on change, making nodemon unnecessary.
 
 ## Motivation
 
