@@ -1,6 +1,6 @@
 {
   "name": "connect-chokidar",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Middleware to watch files and remove require.cache on change, making nodemon unnecessary.",
   "main": "src/index.js",
   "scripts": {
