@@ -1,0 +1,38 @@
+{
+  "name": "connect-chokidar",
+  "version": "1.0.0",
+  "description":
+    "Middleware to watch files and remove `require.cache` on change that makes nodemon unnecessary.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint . && jasmine ./test",
+    "test:dev":
+      "chokidar 'src/**/*' 'test/**/*' --command 'jasmine ./test' --initial"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemtsov/connect-chokidar.git"
+  },
+  "keywords": ["connect", "express", "chokidar", "watcher", "watch", "nodemon"],
+  "author": "nemtsov@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemtsov/connect-chokidar/issues"
+  },
+  "homepage": "https://github.com/nemtsov/connect-chokidar#readme",
+  "dependencies": {
+    "chokidar": "^2.0.2"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jasmine": "^3.1.0",
+    "prettier": "1.11.1",
+    "proxyquire": "^2.0.0",
+    "sinon": "^4.4.6"
+  }
+}
