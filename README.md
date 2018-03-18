@@ -7,7 +7,8 @@ Middleware to watch files and remove `require.cache` on change, making nodemon u
 Sometimes restarting the entire process when a file changes (as with nodemon) takes
 too long or is undesirable. This is often the case with "universal" web applications,
 where the code which runs both on the client and server is already hot-reloaded with webpack.
-In such apps we sometimes have server-only code (such as a GraphQL server or a RESTful API). Restarting the entire server with nodemon would mean forcing webpack to have to take time
+In such apps we sometimes have server-only code (such as a GraphQL server or a RESTful API).
+Restarting the entire server with nodemon would mean forcing webpack to have to take time
 to rebuild, loosing the benefits of hot reloading.
 
 This module saves that time by specifically only removing files from the `require.cache`
@@ -69,6 +70,10 @@ app.use(
   }),
 );
 ```
+
+## Debug-logging
+
+Run your process with the `NODE_DEBUG=connect-chokidar` environment variable set.
 
 ## Inspiration
 

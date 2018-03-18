@@ -2,7 +2,7 @@ const { normalize } = require('path');
 const { debuglog } = require('util');
 const chokidar = require('chokidar');
 
-const log = debuglog('middlewareWatcher');
+const log = debuglog('connect-chokidar');
 
 function isDevEnv(opts) {
   return typeof opts.isDevEnv === 'boolean'
