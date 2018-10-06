@@ -43,7 +43,7 @@ const app = connect(); // or express()
 
 // Now is the trickier bit, you'll have to `require()` all of the files that your
 // local middleware or router depend on. This is because if we required it on top,
-// the router / middleware would always refere to that instance and there would be
+// the router / middleware would always refer to that instance and there would be
 // no way of clearing it.
 
 app.use('/auth', watchMiddleware(() => require('../auth/router')));
