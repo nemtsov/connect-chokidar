@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/nemtsov/connect-chokidar#readme",
   "dependencies": {
-    "chokidar": "^2.0.2"
+    "chokidar": "^3.1.1"
   },
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
